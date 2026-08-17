@@ -36,7 +36,7 @@ jobs:
         run: npm install --no-audit --no-fund
 
       - name: Build
-        run: npm run build
+        run: npm run build:gh-pages
 
       # SPA fallback: serve index.html for any deep link (React Router routes).
       - name: Create 404 fallback

@@ -58,22 +58,18 @@ export default function Hero() {
               variants={staggerItem}
               className="mt-6 text-balance text-4xl font-extrabold leading-[1.05] text-white sm:text-5xl lg:text-[3.6rem]"
             >
-              AVM Smiles — The{' '}
-              <span className="relative sm:whitespace-nowrap">
-                <span className="font-display font-medium italic text-accent-400">
-                  Best Dental Clinic
-                </span>
-              </span>{' '}
-              in Pondicherry for Complete Smile Care
+              AVM Smiles – A Trusted Dental Clinic for Complete Smile Care
             </motion.h1>
 
             <motion.p
               variants={staggerItem}
               className="mt-6 max-w-xl text-base leading-relaxed text-white/75 sm:text-lg"
             >
-              AVM Smiles is a leading dental clinic in Pondicherry providing advanced
-              dental treatments, experienced dentists and personalized care to all
-              age groups.
+              AVM Smiles is a leading dental clinic providing advanced dental
+              treatments, experienced dentists, and personalized care to all age
+              groups. We offer full-scale dental health care from routine checkups
+              to smile makeovers and dental implants, using the latest technology
+              and patient-focused treatment plans.
             </motion.p>
 
             {/* Feature highlights */}

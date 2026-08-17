@@ -13,8 +13,8 @@ export default function About() {
     <>
       <Seo
         title="About Us | AVM Smiles"
-        description="Learn about AVM Smiles, a trusted dental clinic in Pondicherry offering advanced dental treatments, experienced dentists, and patient-focused care."
-        keywords="AVM Smiles, dental clinic Pondicherry, best dental clinic in Pondicherry, dental health care Pondicherry, experienced dentists, dental treatments"
+        description="Learn about AVM Smiles, a trusted dental clinic offering advanced dental treatments, experienced dentists, and patient-focused care."
+        keywords="AVM Smiles, dental clinic, best dental clinic, dental health care, experienced dentists, dental treatments"
         path="/about-us"
       />
       <PageHeader

@@ -4,7 +4,8 @@ import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
 
-// Vite sets BASE_URL to '/AVM/' in the Pages build and '/' in dev.
+// Vite sets BASE_URL from vite.config.js: '/' for the default/Hostinger
+// build and dev, '/AVM/' only for the GitHub Pages build.
 const basename = import.meta.env.BASE_URL.replace(/\/+$/, '') || '/'
 
 createRoot(document.getElementById('root')).render(

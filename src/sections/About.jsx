@@ -15,7 +15,7 @@ export default function About() {
           className="lg:col-span-7"
           eyebrow="About AVM Smiles"
           title="Your Trusted Partner for Complete Dental Care"
-          intro="At AVM Smiles, we are focused on delivering the best dental clinic services in Pondicherry with modern dental treatments, caring service, and excellent patient experiences."
+          intro="At AVM Smiles, we are focused on delivering top-quality dental clinic services with modern dental treatments, caring service, and excellent patient experiences. Our clinic practice prioritizes preventive, restorative, cosmetic, and orthodontic dentistry to help our patients achieve healthy and beautiful smiles. From regular dental cleaning to a complete smile makeover, our clinic combines expertise, technology, and personalized attention to offer the best in dental care services."
         />
         <div className="lg:col-span-5 lg:pb-2 lg:text-right">
           <Button to="/about-us" variant="outline" icon={ArrowRight}>

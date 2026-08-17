@@ -21,8 +21,8 @@ export default function Contact() {
     <>
       <Seo
         title="Contact Us | AVM Smiles"
-        description="Contact AVM Smiles Dental Clinic in Pondicherry for appointments, dental consultations, implants, aligners, and comprehensive oral care services."
-        keywords="contact AVM Smiles, dental clinic Pondicherry contact, dentist appointment Pondicherry, dental consultation, dental implants Pondicherry, oral care"
+        description="Contact AVM Smiles Dental Clinic for appointments, dental consultations, implants, aligners, and comprehensive oral care services."
+        keywords="contact AVM Smiles, dental clinic contact, dentist appointment i, dental consultation, dental implants, oral care"
         path="/contact-us"
       />
       <PageHeader
@@ -109,9 +109,8 @@ export default function Contact() {
         >
           Visit{' '}
           <span className="font-semibold text-ink">AVM Smiles</span>, your trusted
-          destination for comprehensive dental health care in Pondicherry. We look
-          forward to helping you maintain a healthy, confident smile for years to
-          come.
+          destination for comprehensive dental health care. We look forward to
+          helping you maintain a healthy, confident smile for years to come.
         </motion.p>
       </Section>
 
