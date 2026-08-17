@@ -50,7 +50,7 @@ export default function Hero() {
                   <span className="absolute h-2 w-2 animate-ping rounded-full bg-accent-400/80" />
                   <span className="h-2 w-2 rounded-full bg-accent-500" />
                 </span>
-                Best Dental Clinic in Pondicherry
+                Best Dental Clinic
               </span>
             </motion.div>
 
