@@ -21,7 +21,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         <SmartImage
           src={images.heroBackground}
-          alt="Modern AVM Smiles dental clinic interior in Pondicherry"
+          alt="Modern AVM Smiles dental clinic interior"
           loading="eager"
           className="h-full w-full"
           imgClassName="object-cover"

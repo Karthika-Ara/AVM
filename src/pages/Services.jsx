@@ -6,8 +6,8 @@ export default function Services() {
   return (
     <>
       <Seo
-        title="Dental Services in Pondicherry | AVM Smiles"
-        description="Explore the full range of dental care services in Pondicherry at AVM Smiles — implants, root canals, teeth whitening, aligners, braces, veneers and more."
+        title="Dental Services | AVM Smiles"
+        description="Explore the full range of dental care services at AVM Smiles — implants, root canals, teeth whitening, aligners, braces, veneers and more."
         path="/services"
       />
       <PageHeader

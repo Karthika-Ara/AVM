@@ -1,5 +1,5 @@
 ﻿import { Link } from 'react-router-dom'
-import { Phone, Mail, MapPin, Clock, ArrowUpRight } from 'lucide-react'
+import { Phone, Mail, Clock, ArrowUpRight } from 'lucide-react'
 import Container from './Container'
 import Logo from './Logo'
 import { site, social } from '../data/site'
@@ -53,9 +53,9 @@ export default function Footer() {
           <div className="lg:col-span-4">
             <Logo tone="light" />
             <p className="mt-6 max-w-xs text-sm leading-relaxed text-white/65">
-              AVM Smiles is dedicated to providing the best dental care in
-              Pondicherry — advanced treatments, expert dentists and personalized
-              care for every smile.
+              AVM Smiles is dedicated to providing exceptional dental care with
+              advanced treatments, expert dentists and personalized care for every
+              smile.
             </p>
             <div className="mt-7 flex items-center gap-3">
               {social.map((s) => {
@@ -137,10 +137,6 @@ export default function Footer() {
                   <Mail className="mt-0.5 h-4 w-4 shrink-0 text-accent-400" />
                   <span>{site.email}</span>
                 </a>
-              </li>
-              <li className="flex items-start gap-3">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent-400" />
-                <span>{site.address}</span>
               </li>
             </ul>
 

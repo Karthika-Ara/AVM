@@ -20,7 +20,7 @@ export default function About() {
       <PageHeader
         eyebrow="About Us"
         title="About AVM Smiles"
-        intro="A trusted dental clinic in Pondicherry delivering advanced treatments, experienced dentists and genuinely patient-focused care."
+        intro="A trusted dental clinic delivering advanced treatments, experienced dentists and genuinely patient-focused care."
         crumbs={[{ label: 'About Us' }]}
       />
       <AboutStory />

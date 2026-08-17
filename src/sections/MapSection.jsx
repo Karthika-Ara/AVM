@@ -7,6 +7,10 @@ import { site } from '../data/site'
 
 /** Full-width embedded map with a floating clinic-details card. */
 export default function MapSection() {
+  if (!site.mapEmbed) {
+    return null
+  }
+
   return (
     <section id="location" className="bg-white pb-20 pt-4 sm:pb-24">
       <Container>
@@ -32,7 +36,9 @@ export default function MapSection() {
                 <MapPin className="h-3.5 w-3.5" /> Visit Us
               </span>
               <h3 className="mt-4 text-xl font-bold text-ink">AVM Smiles Dental Clinic</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted">{site.address}</p>
+              {site.address && (
+                <p className="mt-2 text-sm leading-relaxed text-muted">{site.address}</p>
+              )}
 
               <div className="mt-5 space-y-3 border-t border-line pt-5 text-sm">
                 <p className="flex items-center gap-3 text-ink">
@@ -47,11 +53,13 @@ export default function MapSection() {
                 </a>
               </div>
 
-              <div className="mt-6">
-                <Button href={site.mapLink} variant="primary" icon={Navigation} className="w-full">
-                  Get Directions
-                </Button>
-              </div>
+              {site.mapLink && (
+                <div className="mt-6">
+                  <Button href={site.mapLink} variant="primary" icon={Navigation} className="w-full">
+                    Get Directions
+                  </Button>
+                </div>
+              )}
             </div>
           </div>
         </motion.div>

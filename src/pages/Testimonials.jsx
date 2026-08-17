@@ -1,10 +1,10 @@
-﻿import { motion } from 'framer-motion'
+import { motion } from 'framer-motion'
+import { Quote } from 'lucide-react'
 import Seo from '../components/Seo'
 import PageHeader from '../components/PageHeader'
 import Section from '../components/Section'
 import SectionHeading from '../components/SectionHeading'
 import StarRating from '../components/StarRating'
-import { Quote } from 'lucide-react'
 import { staggerParent, staggerItem, viewportOnce } from '../lib/motion'
 import { Reviews, FinalCta } from '../sections'
 import testimonials from '../data/testimonials'
@@ -13,20 +13,19 @@ export default function Testimonials() {
   return (
     <>
       <Seo
-        title="Patient Testimonials | AVM Smiles Pondicherry"
-        description="Read and watch real patient reviews of AVM Smiles — one of the best dental clinics in Pondicherry for implants, aligners, root canals and smile makeovers."
+        title="Patient Testimonials | AVM Smiles"
+        description="Read and watch real patient reviews of AVM Smiles for implants, aligners, root canals and smile makeovers."
         path="/testimonials"
       />
       <PageHeader
         eyebrow="Testimonials"
         title="Smiles worth talking about"
-        intro="Thousands of patients trust AVM Smiles for their dental care. Here’s what they have to say."
+        intro="Thousands of patients trust AVM Smiles for their dental care. Here's what they have to say."
         crumbs={[{ label: 'Testimonials' }]}
       />
 
       <Reviews />
 
-      {/* Full review wall */}
       <Section tone="surface">
         <SectionHeading
           align="left"
@@ -49,7 +48,7 @@ export default function Testimonials() {
               <Quote className="h-8 w-8 text-brand-200" />
               <StarRating value={t.rating} className="mt-4" />
               <blockquote className="mt-3 flex-1 text-[0.95rem] leading-relaxed text-ink/85">
-                “{t.quote}”
+                "{t.quote}"
               </blockquote>
               <figcaption className="mt-5 flex items-center gap-3 border-t border-line pt-5">
                 <span className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-brand-600 text-sm font-bold text-white">
@@ -57,9 +56,6 @@ export default function Testimonials() {
                 </span>
                 <div>
                   <p className="font-bold text-ink">{t.name}</p>
-                  <p className="text-sm text-muted">
-                    {t.treatment} · {t.location}
-                  </p>
                 </div>
               </figcaption>
             </motion.figure>

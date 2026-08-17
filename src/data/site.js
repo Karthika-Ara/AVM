@@ -4,7 +4,7 @@
  */
 export const site = {
   name: 'AVM Smiles',
-  tagline: 'Best Dental Clinic in Pondicherry',
+  tagline: 'Trusted Dental Clinic',
   // --- Contact (placeholders — update with real details) ---
   phoneDisplay: '+91 98765 43210',
   phoneHref: 'tel:+919876543210',
@@ -12,17 +12,16 @@ export const site = {
   whatsappHref: 'https://wa.me/919876543210',
   email: 'care@avmsmiles.com',
   emailHref: 'mailto:care@avmsmiles.com',
-  address: 'No. 24, Anna Salai, T. Nagar, Pondicherry, Tamil Nadu 600017',
-  addressShort: 'T. Nagar, Pondicherry',
+  address: '',
+  addressShort: '',
   hoursDays: 'Monday – Saturday',
   hoursTime: '9:00 AM – 8:00 PM',
   hoursNote: 'Sunday by appointment only',
   rating: 4.9,
   reviewCount: 1280,
-  // Google Maps embed for Pondicherry (T. Nagar area)
-  mapEmbed:
-    'https://www.google.com/maps?q=T.+Nagar,+Pondicherry,+Tamil+Nadu&output=embed',
-  mapLink: 'https://www.google.com/maps/place/T.+Nagar,+Pondicherry',
+  // Address details will be added once the official clinic location is confirmed.
+  mapEmbed: '',
+  mapLink: '',
 }
 
 export const navLinks = [

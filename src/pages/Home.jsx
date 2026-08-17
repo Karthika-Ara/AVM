@@ -14,14 +14,14 @@ import {
 } from '../sections'
 
 const KEYWORDS =
-  'best dental clinic in pondicherry, dental care services in pondicherry, dental clinic services in pondicherry, dental health care in pondicherry, dental health services in pondicherry, dental hygiene clinic in pondicherry, teeth whitening clinic in pondicherry, teeth whitening dentist in pondicherry, the dental clinic in pondicherry, the tooth clinic in pondicherry, top dental care in pondicherry'
+  'best dental clinic, dental care services, dental clinic services, dental health care, dental health services, dental hygiene clinic, teeth whitening clinic, teeth whitening dentist, top dental care'
 
 export default function Home() {
   return (
     <>
       <Seo
-        title="Best Dental Clinic in Pondicherry | AVM Smiles"
-        description="AVM Smiles is the best dental clinic in Pondicherry, offering advanced dental treatments, expert dentists, and complete dental health care for all ages."
+        title="Best Dental Clinic | AVM Smiles"
+        description="AVM Smiles is a trusted dental clinic offering advanced dental treatments, expert dentists, and complete dental health care for all ages."
         keywords={KEYWORDS}
         path="/"
       />

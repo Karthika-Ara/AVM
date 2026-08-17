@@ -21,13 +21,13 @@ export default function Reviews() {
     [index, count]
   )
 
-  // Auto-advance
   useEffect(() => {
-    const t = setInterval(() => {
+    const timer = setInterval(() => {
       setDir(1)
       setIndex((i) => (i + 1) % count)
     }, 6000)
-    return () => clearInterval(t)
+
+    return () => clearInterval(timer)
   }, [count])
 
   const active = testimonials[index]
@@ -35,7 +35,6 @@ export default function Reviews() {
   return (
     <Section id="reviews" tone="white">
       <div className="grid gap-12 lg:grid-cols-12 lg:gap-14">
-        {/* LEFT — Google review block */}
         <motion.div
           variants={fadeRight}
           initial="hidden"
@@ -83,17 +82,16 @@ export default function Reviews() {
                 ['98%', 'Recommend'],
                 ['25k+', 'Patients'],
                 ['10+', 'Years'],
-              ].map(([v, l]) => (
-                <div key={l}>
-                  <p className="text-lg font-extrabold text-brand-700">{v}</p>
-                  <p className="text-xs text-muted">{l}</p>
+              ].map(([value, label]) => (
+                <div key={label}>
+                  <p className="text-lg font-extrabold text-brand-700">{value}</p>
+                  <p className="text-xs text-muted">{label}</p>
                 </div>
               ))}
             </div>
           </div>
         </motion.div>
 
-        {/* RIGHT — carousel */}
         <div className="lg:col-span-8">
           <div className="relative overflow-hidden rounded-3xl border border-line bg-gradient-to-br from-brand-50 to-white p-8 shadow-card sm:p-12">
             <Quote className="h-12 w-12 text-brand-200" />
@@ -110,7 +108,7 @@ export default function Reviews() {
                 >
                   <StarRating value={active.rating} className="mb-5" />
                   <p className="text-xl font-medium leading-relaxed text-ink sm:text-2xl">
-                    “{active.quote}”
+                    "{active.quote}"
                   </p>
                   <footer className="mt-7 flex items-center gap-4">
                     <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-brand-600 text-sm font-bold text-white">
@@ -118,16 +116,12 @@ export default function Reviews() {
                     </span>
                     <div>
                       <p className="font-bold text-ink">{active.name}</p>
-                      <p className="text-sm text-muted">
-                        {active.treatment} · {active.location}
-                      </p>
                     </div>
                   </footer>
                 </motion.blockquote>
               </AnimatePresence>
             </div>
 
-            {/* Controls */}
             <div className="mt-8 flex items-center justify-between">
               <div className="flex gap-2">
                 {testimonials.map((_, i) => (

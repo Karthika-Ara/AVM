@@ -3,8 +3,8 @@
  * the tree into <head>, so each page can declare its own metadata declaratively.
  */
 export default function Seo({
-  title = 'Best Dental Clinic in Pondicherry | AVM Smiles',
-  description = 'AVM Smiles is the best dental clinic in Pondicherry, offering advanced dental treatments, expert dentists, and complete dental health care for all ages.',
+  title = 'Best Dental Clinic | AVM Smiles',
+  description = 'AVM Smiles is a trusted dental clinic offering advanced dental treatments, expert dentists, and complete dental health care for all ages.',
   keywords,
   path = '/',
 }) {

@@ -2,7 +2,7 @@
 export const testimonials = [
   {
     name: 'Priya Raghavan',
-    location: 'Pondicherry',
+    location: '',
     rating: 5,
     treatment: 'General Dentistry',
     quote:
@@ -11,7 +11,7 @@ export const testimonials = [
   },
   {
     name: 'Arjun Mehta',
-    location: 'Pondicherry',
+    location: '',
     rating: 5,
     treatment: 'Patient Experience',
     quote:
@@ -20,7 +20,7 @@ export const testimonials = [
   },
   {
     name: 'Sneha Karthik',
-    location: 'Pondicherry',
+    location: '',
     rating: 5,
     treatment: 'Dental Care',
     quote:
@@ -29,7 +29,7 @@ export const testimonials = [
   },
   {
     name: 'Vimal Anand',
-    location: 'Pondicherry',
+    location: '',
     rating: 5,
     treatment: 'Root Canal Treatment',
     quote:
@@ -38,7 +38,7 @@ export const testimonials = [
   },
   {
     name: 'Lakshmi Narayanan',
-    location: 'Pondicherry',
+    location: '',
     rating: 5,
     treatment: 'Smile Makeover',
     quote:

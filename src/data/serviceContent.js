@@ -36,10 +36,10 @@
 export const serviceContent = {
   'tooth-extraction': {
     seo: {
-      title: 'Best Tooth Extraction in Pondicherry | AVM Smiles',
+      title: 'Best Tooth Extraction | AVM Smiles',
       description:
-        'Get the best tooth extraction in Pondicherry at AVM Smiles. Safe, comfortable treatment by experienced dentists. Visit a trusted tooth extraction clinic near Pondicherry.',
-      keywords: 'Tooth Extraction in Pondicherry, Tooth Extraction near Pondicherry',
+        'Get the best tooth extraction at AVM Smiles. Safe, comfortable treatment by experienced dentists. Visit a trusted tooth extraction clinic.',
+      keywords: 'Tooth Extraction, Tooth Extraction Clinic',
     },
     hero: {
       h1: 'Tooth Extraction',
@@ -196,7 +196,7 @@ export const serviceContent = {
         quote:
           'I had a lot of pain in my teeth and got my extraction done at AVM Smiles. The procedure was painless and recovery was very smooth.',
         name: 'Priya S.',
-        location: 'Pondicherry',
+        location: '',
         initials: 'PS',
       },
       {
@@ -217,7 +217,7 @@ export const serviceContent = {
         quote:
           'The team at AVM Smiles was extremely caring and professional throughout my tooth extraction treatment. The procedure was quick and comfortable, and the post-treatment support helped me recover without any complications.',
         name: 'Lakshmi V.',
-        location: 'Pondicherry',
+        location: '',
         initials: 'LV',
       },
     ],
@@ -290,7 +290,7 @@ export const serviceContent = {
         heading: 'What are Dental Bridges?',
         paragraphs: [
           'A dental bridge is a prosthetic device used to replace one or more missing teeth by affixing artificial teeth to adjacent natural teeth or implants. Bridges help restore your smile, facial structure and ability to chew.',
-          'AVM Smiles’ Dental Bridges & Crowns in Pondicherry give patients durable, strong and natural-looking restorations.',
+          'AVM Smiles’ Dental Bridges & Crowns give patients durable, strong and natural-looking restorations.',
         ],
       },
       {
@@ -464,7 +464,7 @@ export const serviceContent = {
         quote:
           'I had my dental crown done at AVM Smiles. It looks totally natural and feels really comfortable.',
         name: 'Suresh K.',
-        location: 'Pondicherry',
+        location: '',
         initials: 'SK',
       },
       {
@@ -476,7 +476,7 @@ export const serviceContent = {
       },
       {
         quote:
-          'Best clinic for a smile makeover — I looked up Dental Bridges & Crowns near Pondicherry and found perfect care at AVM Smiles.',
+          'Best clinic for a smile makeover — I found perfect care at AVM Smiles for my Dental Bridges & Crowns treatment.',
         name: 'Mohammed F.',
         location: 'Coimbatore',
         initials: 'MF',
@@ -485,7 +485,7 @@ export const serviceContent = {
         quote:
           'I got my crown and bridge treatment done at AVM Smiles and I’m extremely satisfied with the results. The fit is perfect, the appearance is natural, and the entire experience was smooth and comfortable from start to finish.',
         name: 'Deepa M.',
-        location: 'Pondicherry',
+        location: '',
         initials: 'DM',
       },
     ],
@@ -529,7 +529,7 @@ export const serviceContent = {
       keywords: 'Dental Dentures, Dental Dentures',
     },
     hero: {
-      h1: 'Dental Dentures in Pondicherry',
+      h1: 'Dental Dentures',
       lead: 'Custom, natural-looking dentures that restore your smile, confidence and ability to chew and speak with ease.',
     },
     intro: {
@@ -699,7 +699,7 @@ export const serviceContent = {
         quote:
           'My full dentures were created by AVM Smiles. They fit like a glove and feel very natural and must be visited for Dental Dentures.',
         name: 'Lakshmi P.',
-        location: 'Pondicherry',
+        location: '',
         initials: 'LP',
       },
       {
@@ -720,7 +720,7 @@ export const serviceContent = {
         quote:
           'I got my dentures done at AVM Smiles and the experience was excellent. The fit is very comfortable, and I can speak and eat much better now.',
         name: 'Meena R.',
-        location: 'Pondicherry',
+        location: '',
         initials: 'MR',
       },
     ],
@@ -764,7 +764,7 @@ export const serviceContent = {
       keywords: 'Root Canal Treatment, Root Canal Treatment',
     },
     hero: {
-      h1: 'Root Canal Treatment in Pondicherry',
+      h1: 'Root Canal Treatment',
       lead: 'Painless, single-sitting root canal therapy that eliminates infection and saves your natural tooth — with advanced endodontic technology.',
     },
     intro: {
@@ -934,7 +934,7 @@ export const serviceContent = {
         quote:
           'I had a severe toothache and got my RCT done at AVM Smiles. The treatment was totally pain-free and very professional.',
         name: 'Arun S.',
-        location: 'Pondicherry',
+        location: '',
         initials: 'AS',
       },
       {
@@ -955,7 +955,7 @@ export const serviceContent = {
         quote:
           'I underwent root canal treatment at AVM Smiles and the experience was excellent. The procedure was completely comfortable and the pain was relieved immediately.',
         name: 'Divya K.',
-        location: 'Pondicherry',
+        location: '',
         initials: 'DK',
       },
     ],
@@ -1000,7 +1000,7 @@ export const serviceContent = {
         'best teeth whitening treatment, dental whitening treatment, professional tooth whitening treatment, teeth whitening treatment cost, teeth whitening treatment dentist',
     },
     hero: {
-      h1: 'Teeth Whitening Treatment in Pondicherry',
+      h1: 'Teeth Whitening Treatment',
       lead: 'Safe, clinically proven whitening that removes deep stains for a noticeably brighter smile — often in a single session.',
     },
     intro: {
@@ -1181,7 +1181,7 @@ export const serviceContent = {
         quote:
           'AVM Smiles gave me the best teeth whitening treatment. I smile now more brightly, with more confidence.',
         name: 'Karthik S.',
-        location: 'Pondicherry',
+        location: '',
         initials: 'KS',
       },
       {
@@ -1202,7 +1202,7 @@ export const serviceContent = {
         quote:
           'I’m really happy with my teeth whitening treatment at AVM Smiles. The results were quick and safe, and my smile looks much brighter and more natural.',
         name: 'Meena L.',
-        location: 'Pondicherry',
+        location: '',
         initials: 'ML',
       },
     ],
@@ -1247,7 +1247,7 @@ export const serviceContent = {
         'dental scaling & polishing teeth, polishing after scaling, polishing teeth price, scaling and polishing of teeth cost, teeth cleaning and polishing cost',
     },
     hero: {
-      h1: 'Scaling & Polishing in Pondicherry',
+      h1: 'Scaling & Polishing',
       lead: 'Gentle, ultrasonic scaling and polishing that removes plaque, tartar and stains for healthier gums and a brighter smile.',
     },
     intro: {
@@ -1445,7 +1445,7 @@ export const serviceContent = {
         quote:
           'I was amazed at the difference after my cleaning at AVM Smiles. My teeth feel cleaner and my gums are much healthier now.',
         name: 'Lakshmi R.',
-        location: 'Pondicherry',
+        location: '',
         initials: 'LR',
       },
       {
@@ -1459,14 +1459,14 @@ export const serviceContent = {
         quote:
           'I was concerned about the cost of scaling and polishing, but AVM Smiles offers affordable treatment with excellent care.',
         name: 'Priya S.',
-        location: 'Pondicherry',
+        location: '',
         initials: 'PS',
       },
       {
         quote:
           'I had scaling and polishing done at AVM Smiles and the experience was excellent. The procedure was gentle and my teeth feel incredibly fresh and smooth.',
         name: 'Mohammed A.',
-        location: 'Pondicherry',
+        location: '',
         initials: 'MA',
       },
     ],
@@ -1511,7 +1511,7 @@ export const serviceContent = {
         'invisible dental aligners, teeth clear aligners price, teeth invisible aligners, invisible aligners for teeth cost',
     },
     hero: {
-      h1: 'Invisible Aligners in Pondicherry',
+      h1: 'Invisible Aligners',
       lead: 'Clear, removable aligners that straighten teeth discreetly and comfortably — modern orthodontics that fits your lifestyle.',
     },
     intro: {
@@ -1702,7 +1702,7 @@ export const serviceContent = {
         quote:
           'I was searching for invisible dental aligners and AVM Smiles was more than I expected. The process was effortless and my smile has been beautifully transformed.',
         name: 'Harini R.',
-        location: 'Pondicherry',
+        location: '',
         initials: 'HR',
       },
       {
@@ -1716,14 +1716,14 @@ export const serviceContent = {
         quote:
           "Looking for discreet alternatives to braces, I chose teeth invisible aligners at AVM Smiles. My teeth are now perfectly straight and I couldn't be happier.",
         name: 'Priya M.',
-        location: 'Pondicherry',
+        location: '',
         initials: 'PM',
       },
       {
         quote:
           'I chose AVM Smiles for invisible aligner treatment and the experience was excellent. The aligners were comfortable, easy to use, and the results started showing within a few weeks.',
         name: 'Mohammed R.',
-        location: 'Pondicherry',
+        location: '',
         initials: 'MR',
       },
     ],
@@ -2010,14 +2010,14 @@ export const serviceContent = {
         quote:
           'I was looking for invisible braces on teeth and AVM Smiles gave excellent care and my smile has changed so much and it looks awesome.',
         name: 'Nandhini R.',
-        location: 'Pondicherry',
+        location: '',
         initials: 'NR',
       },
       {
         quote:
           'My orthodontist guided me through the differences between metal and clear braces and helped me pick the best option. The treatment was easy and effective.',
         name: 'Arjun K.',
-        location: 'Pondicherry',
+        location: '',
         initials: 'AK',
       },
       {
@@ -2031,7 +2031,7 @@ export const serviceContent = {
         quote:
           'My experience with invisible braces at AVM Smiles was excellent. They were comfortable, and the treatment process was very smooth.',
         name: 'Meera L.',
-        location: 'Pondicherry',
+        location: '',
         initials: 'ML',
       },
     ],
@@ -2076,7 +2076,7 @@ export const serviceContent = {
         'dental veneer treatment, teeth veneer treatment, veneer treatment cost, veneer treatment for teeth',
     },
     hero: {
-      h1: 'Veneer Treatment in Pondicherry',
+      h1: 'Veneer Treatment',
       lead: 'Custom porcelain and composite veneers that correct stained, chipped or uneven teeth for a flawless, natural-looking smile.',
     },
     intro: {
@@ -2305,7 +2305,7 @@ export const serviceContent = {
         quote:
           "I had dental veneer treatment done at AVM Smiles and I couldn't be happier. My smile looks perfectly natural and beautiful.",
         name: 'Harini R.',
-        location: 'Pondicherry',
+        location: '',
         initials: 'HR',
       },
       {
@@ -2319,14 +2319,14 @@ export const serviceContent = {
         quote:
           "I wanted a smile makeover and I went for the teeth veneer treatment. I've gained a lot of confidence from this transformation.",
         name: 'Priya M.',
-        location: 'Pondicherry',
+        location: '',
         initials: 'PM',
       },
       {
         quote:
           'From consultation to final placement, the entire veneer process was smooth and comfortable. The team paid attention to every detail, and I love my new smile.',
         name: 'Ananya V.',
-        location: 'Pondicherry',
+        location: '',
         initials: 'AV',
       },
     ],
@@ -2370,7 +2370,7 @@ export const serviceContent = {
       keywords: 'dental implants cleaning, dental implants treatment',
     },
     hero: {
-      h1: 'Dental Implants in Pondicherry',
+      h1: 'Dental Implants',
       lead: 'Permanent, natural-looking tooth replacement that functions like your own teeth and protects your jawbone — the gold standard in restoration.',
     },
     intro: {
@@ -2609,7 +2609,7 @@ export const serviceContent = {
         quote:
           'I had dental implants treatment at AVM Smiles. The results are amazing. My implant feels like a natural tooth.',
         name: 'Arun K.',
-        location: 'Pondicherry',
+        location: '',
         initials: 'AK',
       },
       {
@@ -2623,14 +2623,14 @@ export const serviceContent = {
         quote:
           'My dental implants cleaning were professionally cleaned by dentists, they are working perfectly and are healthy.',
         name: 'Ramesh V.',
-        location: 'Pondicherry',
+        location: '',
         initials: 'RV',
       },
       {
         quote:
           'From surgery to follow-up care, the entire implant journey was smooth and well-managed. I can now eat comfortably without any issues.',
         name: 'Meena L.',
-        location: 'Pondicherry',
+        location: '',
         initials: 'ML',
       },
     ],

@@ -7,14 +7,17 @@ import AppointmentForm from '../components/AppointmentForm'
 import { WhatsappIcon } from '../components/SocialIcons'
 import { MapSection } from '../sections'
 import { fadeRight, staggerParent, staggerItem, viewportOnce } from '../lib/motion'
+import { cn } from '../lib/cn'
 import { site } from '../data/site'
 
 const channels = [
   { icon: Phone, label: 'Call us', value: site.phoneDisplay, href: site.phoneHref },
   { icon: WhatsappIcon, label: 'WhatsApp', value: site.whatsappDisplay, href: site.whatsappHref },
   { icon: Mail, label: 'Email', value: site.email, href: site.emailHref },
-  { icon: MapPin, label: 'Visit', value: site.addressShort, href: site.mapLink },
-]
+  site.addressShort && site.mapLink
+    ? { icon: MapPin, label: 'Visit', value: site.addressShort, href: site.mapLink }
+    : null,
+].filter(Boolean)
 
 export default function Contact() {
   return (
@@ -55,12 +58,15 @@ export default function Contact() {
               viewport={viewportOnce}
               className="mt-8 grid gap-4 sm:grid-cols-2"
             >
-              {channels.map((c) => (
+              {channels.map((c, index) => (
                 <motion.a
                   key={c.label}
                   href={c.href}
                   variants={staggerItem}
-                  className="group rounded-2xl border border-line bg-surface p-5 transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:bg-white hover:shadow-card"
+                  className={cn(
+                    'group rounded-2xl border border-line bg-surface p-5 transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:bg-white hover:shadow-card',
+                    channels.length % 2 !== 0 && index === channels.length - 1 && 'sm:col-span-2'
+                  )}
                 >
                   <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-white text-brand-600 shadow-soft ring-1 ring-line transition-colors group-hover:bg-brand-600 group-hover:text-white">
                     <c.icon className="h-5 w-5" />

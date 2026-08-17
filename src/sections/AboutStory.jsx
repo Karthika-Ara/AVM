@@ -43,7 +43,7 @@ export default function AboutStory() {
             <div className="overflow-hidden rounded-[2rem] shadow-float">
               <SmartImage
                 src={images.aboutTeam}
-                alt="The AVM Smiles dental team in Pondicherry"
+                alt="The AVM Smiles dental team"
                 className="aspect-[4/3] w-full"
                 imgClassName="transition-transform duration-700 hover:scale-105"
               />

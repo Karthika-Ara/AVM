@@ -383,7 +383,6 @@ export default function ServiceDetail() {
                         </span>
                         <div>
                           <p className="text-sm font-bold text-ink">{t.name}</p>
-                          <p className="text-xs text-muted">{t.location}</p>
                         </div>
                       </figcaption>
                     </motion.figure>
@@ -453,7 +452,7 @@ export default function ServiceDetail() {
   return (
     <>
       <Seo
-        title={`${service.name} in Pondicherry | AVM Smiles`}
+        title={`${service.name} | AVM Smiles`}
         description={service.short}
         path={`/services/${service.slug}`}
       />
