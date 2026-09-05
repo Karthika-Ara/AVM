@@ -17,7 +17,6 @@ DirectoryIndex index.html
 # without redirecting requests for real files/assets.
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteBase /
 
   # Let existing files and directories be served as-is.
   RewriteCond %{REQUEST_FILENAME} -f [OR]

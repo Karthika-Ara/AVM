@@ -1,15 +1,12 @@
 ﻿import Seo from '../components/Seo'
 import PageHeader from '../components/PageHeader'
 import { Services as ServicesSection, Process, FinalCta } from '../sections'
+import { pageSeo } from '../data/pageSeo'
 
 export default function Services() {
   return (
     <>
-      <Seo
-        title="Dental Services | AVM Smiles"
-        description="Explore the full range of dental care services at AVM Smiles — implants, root canals, teeth whitening, aligners, braces, veneers and more."
-        path="/services"
-      />
+      <Seo {...pageSeo['/services']} path="/services" />
       <PageHeader
         eyebrow="Our Services"
         title="Complete dental care under one roof"

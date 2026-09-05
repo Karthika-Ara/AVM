@@ -9,6 +9,7 @@ import { MapSection } from '../sections'
 import { fadeRight, staggerParent, staggerItem, viewportOnce } from '../lib/motion'
 import { cn } from '../lib/cn'
 import { site } from '../data/site'
+import { pageSeo } from '../data/pageSeo'
 
 const channels = [
   { icon: Phone, label: 'Call us', value: site.phoneDisplay, href: site.phoneHref },
@@ -22,12 +23,7 @@ const channels = [
 export default function Contact() {
   return (
     <>
-      <Seo
-        title="Contact Us | AVM Smiles"
-        description="Contact AVM Smiles Dental Clinic for appointments, dental consultations, implants, aligners, and comprehensive oral care services."
-        keywords="contact AVM Smiles, dental clinic contact, dentist appointment i, dental consultation, dental implants, oral care"
-        path="/contact-us"
-      />
+      <Seo {...pageSeo['/contact-us']} path="/contact-us" />
       <PageHeader
         eyebrow="Contact"
         title="Get in Touch with AVM Smiles"

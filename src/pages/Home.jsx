@@ -12,19 +12,12 @@ import {
   FinalCta,
   MapSection,
 } from '../sections'
-
-const KEYWORDS =
-  'best dental clinic, dental care services, dental clinic services, dental health care, dental health services, dental hygiene clinic, teeth whitening clinic, teeth whitening dentist, top dental care'
+import { pageSeo } from '../data/pageSeo'
 
 export default function Home() {
   return (
     <>
-      <Seo
-        title="Best Dental Clinic | AVM Smiles"
-        description="AVM Smiles is a trusted dental clinic offering advanced dental treatments, expert dentists, and complete dental health care for all ages."
-        keywords={KEYWORDS}
-        path="/"
-      />
+      <Seo {...pageSeo['/']} path="/" />
       <Hero />
       <TrustBar />
       <About />

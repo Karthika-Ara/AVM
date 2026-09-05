@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "build:gh-pages": "vite build --mode gh-pages",
+    "build": "vite build && node scripts/prerender-meta.mjs",
+    "build:hostinger": "vite build --mode hostinger && node scripts/prerender-meta.mjs --mode=hostinger",
+    "build:gh-pages": "vite build --mode gh-pages && node scripts/prerender-meta.mjs --mode=gh-pages",
     "lint": "eslint .",
     "preview": "vite preview"
   },
