@@ -30,19 +30,13 @@ import { serviceContent } from '../src/data/serviceContent.js'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const rootDir = join(__dirname, '..')
 const distDir = join(rootDir, 'dist')
-const siteOrigin = 'https://avmsmiles.com'
+const siteOrigin = 'https://avmsmilesdental.com'
 
+// gh-pages serves from a repo subpath ('/AVM/'); every other build (default,
+// hostinger) targets the domain root ('/'). Both use an absolute base, so
+// nesting routes into dist/<path>/ subfolders is always safe.
 const modeArg = process.argv.find((arg) => arg.startsWith('--mode='))
 const mode = modeArg ? modeArg.split('=')[1] : 'default'
-
-// The hostinger build uses a relative base ('./') so it can be uploaded to
-// either the domain root or a subfolder. Nesting routes into subfolders would
-// break those relative asset paths, so per-route prerendering only applies to
-// the absolute-base builds (default '/' and gh-pages '/AVM/').
-if (mode === 'hostinger') {
-  console.log('[prerender-meta] Relative-base build — skipping per-route prerender.')
-  process.exit(0)
-}
 
 function collectRoutes() {
   const routes = Object.entries(pageSeo).map(([path, meta]) => ({ path, ...meta }))

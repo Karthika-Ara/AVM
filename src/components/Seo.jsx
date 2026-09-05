@@ -8,7 +8,7 @@ export default function Seo({
   keywords,
   path = '/',
 }) {
-  const canonical = `https://avmsmiles.com${path}`
+  const canonical = `https://avmsmilesdental.com${path}`
   return (
     <>
       <title>{title}</title>

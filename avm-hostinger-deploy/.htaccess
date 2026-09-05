@@ -1,0 +1,46 @@
+DirectoryIndex index.html
+
+# Some shared-hosting Apache/LiteSpeed configs serve .js/.mjs with the wrong
+# MIME type (e.g. text/plain), which makes browsers refuse to run
+# <script type="module"> and silently blanks the whole app. Force it.
+<IfModule mod_mime.c>
+  AddType text/javascript .js .mjs
+  AddType text/css .css
+  AddType image/svg+xml .svg
+  AddType image/webp .webp
+  AddType font/woff2 .woff2
+  AddType application/json .json
+</IfModule>
+
+# SPA fallback for React Router (BrowserRouter) on Apache/Hostinger.
+# Serves index.html for any deep link so client-side routing can take over,
+# without redirecting requests for real files/assets.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Let existing files and directories be served as-is.
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Everything else falls back to index.html.
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+# Cache immutable hashed assets aggressively; never cache index.html.
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "index\.html$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+  </FilesMatch>
+</IfModule>

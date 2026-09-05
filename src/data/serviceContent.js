@@ -38,8 +38,8 @@ export const serviceContent = {
     seo: {
       title: 'Best Tooth Extraction | AVM Smiles',
       description:
-        'Get the best tooth extraction at AVM Smiles. Safe, comfortable treatment by experienced dentists. Visit a trusted tooth extraction clinic.',
-      keywords: 'Tooth Extraction, Tooth Extraction Clinic',
+        'Get the best tooth extraction at AVM Smiles. Safe, comfortable treatment by experienced dentists. Visit a trusted tooth extraction clinic near you.',
+      keywords: 'Tooth Extraction, Tooth Extraction',
     },
     hero: {
       h1: 'Tooth Extraction',

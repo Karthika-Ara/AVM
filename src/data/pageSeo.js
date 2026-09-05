@@ -9,9 +9,9 @@ export const pageSeo = {
   '/': {
     title: 'Best Dental Clinic | AVM Smiles',
     description:
-      'AVM Smiles is a trusted dental clinic offering advanced dental treatments, expert dentists, and complete dental health care for all ages.',
+      'AVM Smiles is a leading dental clinic offering advanced dental treatments, expert dentists, and complete dental health care for all ages.',
     keywords:
-      'best dental clinic, dental care services, dental clinic services, dental health care, dental health services, dental hygiene clinic, teeth whitening clinic, teeth whitening dentist, top dental care',
+      'best dental clinic in pondicherry, dental care services in pondicherry, dental clinic services in pondicherry, dental health care in pondicherry, dental health services in pondicherry, dental hygiene clinic in pondicherry, teeth whitening clinic in pondicherry, teeth whitening dentist in pondicherry, the dental clinic in pondicherry, the tooth clinic in pondicherry, top dental care in pondicherry',
   },
   '/about-us': {
     title: 'About Us | AVM Smiles',
@@ -41,8 +41,9 @@ export const pageSeo = {
     title: 'Contact Us | AVM Smiles',
     description:
       'Contact AVM Smiles Dental Clinic for appointments, dental consultations, implants, aligners, and comprehensive oral care services.',
+    // Keywords kept verbatim from the client's provided meta data document.
     keywords:
-      'contact AVM Smiles, dental clinic contact, dentist appointment, dental consultation, dental implants, oral care',
+      'contact AVM Smiles, dental clinic contact, dentist appointment i, dental consultation, dental implants, oral care',
   },
 }
 
