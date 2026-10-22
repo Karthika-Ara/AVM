@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
-import { Phone, CalendarDays, Menu, X } from 'lucide-react'
+import { Phone, CalendarDays, Menu, X, ChevronDown, MapPin } from 'lucide-react'
 import Container from './Container'
 import Logo from './Logo'
 import Button from './Button'
 import { cn } from '../lib/cn'
-import { navLinks, site } from '../data/site'
+import { navLinks, site, locations } from '../data/site'
 
 /**
  * Sticky header. Transparent over the hero, turns into a frosted-white bar on
@@ -15,6 +15,7 @@ import { navLinks, site } from '../data/site'
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
+  const [mobileLoc, setMobileLoc] = useState(false)
   const { pathname } = useLocation()
 
   // Pages without a dark hero behind the header always show the solid bar.
@@ -48,8 +49,11 @@ export default function Header() {
           : 'border-b border-transparent py-5'
       )}
     >
-      <Container className="flex items-center justify-between gap-4">
-        <Logo tone={solid ? 'dark' : 'light'} />
+      {/* Full-width row: logo at the left edge, menu centred, buttons at the right edge */}
+      <div className="flex w-full items-center justify-between gap-4 px-5 sm:px-8 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:px-10">
+        <div className="justify-self-start">
+          <Logo tone={solid ? 'dark' : 'light'} />
+        </div>
 
         {/* Center nav */}
         <nav className="hidden items-center gap-1 lg:flex">
@@ -86,10 +90,38 @@ export default function Header() {
               )}
             </NavLink>
           ))}
+              <div className="group relative">
+                <button
+                  type="button"
+                  className={cn(
+                    'flex items-center gap-1 rounded-full px-4 py-2 text-[0.95rem] font-medium transition-colors duration-300',
+                    linkTone,
+                    solid ? 'hover:text-brand-700' : 'hover:text-white'
+                  )}
+                >
+                  Location
+                  <ChevronDown className="h-4 w-4 transition-transform duration-200 group-hover:rotate-180" />
+                </button>
+                <div className="invisible absolute left-0 top-full z-50 translate-y-2 pt-2 opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
+                  <ul className="w-56 rounded-2xl border border-line bg-white p-2 shadow-card">
+                    {locations.map((loc) => (
+                      <li key={loc.href}>
+                        <a
+                          href={loc.href}
+                          className="flex items-center gap-2 rounded-xl px-3 py-2.5 text-sm font-medium text-ink/80 transition-colors hover:bg-brand-50 hover:text-brand-700"
+                        >
+                          <MapPin className="h-4 w-4 text-brand-600" />
+                          {loc.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
         </nav>
 
         {/* Right actions */}
-        <div className="hidden items-center gap-3 lg:flex">
+        <div className="hidden items-center gap-3 justify-self-end lg:flex">
           <Button
             href={site.phoneHref}
             variant={solid ? 'outline' : 'light'}
@@ -119,7 +151,7 @@ export default function Header() {
         >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
-      </Container>
+      </div>
 
       {/* Mobile drawer */}
       <AnimatePresence>
@@ -151,6 +183,32 @@ export default function Header() {
                     {link.label}
                   </NavLink>
                 ))}
+                <div>
+                  <button
+                    type="button"
+                    onClick={() => setMobileLoc((v) => !v)}
+                    aria-expanded={mobileLoc}
+                    className="flex w-full items-center justify-between rounded-2xl px-4 py-3 text-base font-medium text-ink/80 hover:bg-surface"
+                  >
+                    Location
+                    <ChevronDown className={cn('h-5 w-5 transition-transform', mobileLoc && 'rotate-180')} />
+                  </button>
+                  {mobileLoc && (
+                    <ul className="mb-1 ml-4 border-l border-line pl-2">
+                      {locations.map((loc) => (
+                        <li key={loc.href}>
+                          <a
+                            href={loc.href}
+                            className="flex items-center gap-2 rounded-xl px-3 py-2.5 text-sm font-medium text-ink/80 hover:bg-surface"
+                          >
+                            <MapPin className="h-4 w-4 text-brand-600" />
+                            {loc.label}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
                 <div className="mt-2 grid grid-cols-2 gap-2.5 p-1">
                   <Button href={site.phoneHref} variant="outline" size="sm" icon={Phone} iconRight={false} onClick={closeMenu}>
                     Call

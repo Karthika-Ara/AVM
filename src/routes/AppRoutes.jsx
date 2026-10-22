@@ -14,6 +14,7 @@ import MainLayout from '../layouts/MainLayout'
  *   /gallery              → Smile gallery
  *   /testimonials         → Testimonials
  *   /contact-us           → Contact (legacy /contact redirects here)
+ *   /thankyou             → Appointment confirmation
  *   *                     → 404
  */
 const Home = lazy(() => import('../pages/Home'))
@@ -23,6 +24,7 @@ const ServiceDetail = lazy(() => import('../pages/ServiceDetail'))
 const Gallery = lazy(() => import('../pages/Gallery'))
 const Testimonials = lazy(() => import('../pages/Testimonials'))
 const Contact = lazy(() => import('../pages/Contact'))
+const ThankYou = lazy(() => import('../pages/ThankYou'))
 const NotFound = lazy(() => import('../pages/NotFound'))
 
 export default function AppRoutes() {
@@ -38,6 +40,7 @@ export default function AppRoutes() {
         <Route path="testimonials" element={<Testimonials />} />
         <Route path="contact-us" element={<Contact />} />
         <Route path="contact" element={<Navigate to="/contact-us" replace />} />
+        <Route path="thankyou" element={<ThankYou />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

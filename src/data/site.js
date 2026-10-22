@@ -6,12 +6,12 @@ export const site = {
   name: 'AVM Smiles',
   tagline: 'Trusted Dental Clinic',
   // --- Contact (placeholders — update with real details) ---
-  phoneDisplay: '+91 98765 43210',
-  phoneHref: 'tel:+919876543210',
-  whatsappDisplay: '+91 98765 43210',
-  whatsappHref: 'https://wa.me/919876543210',
-  email: 'care@avmsmiles.com',
-  emailHref: 'mailto:care@avmsmiles.com',
+  phoneDisplay: '+91 84899 34567',
+  phoneHref: 'tel:+918489934567',
+  whatsappDisplay: '+91 84899 34567',
+  whatsappHref: 'https://wa.me/918489934567',
+  email: 'accounts@arkglobalomniverse.com',
+  emailHref: 'mailto:accounts@arkglobalomniverse.com',
   address: '',
   addressShort: '',
   hoursDays: 'Monday – Saturday',
@@ -31,6 +31,15 @@ export const navLinks = [
   { label: 'Gallery', to: '/gallery' },
   { label: 'Testimonials', to: '/testimonials' },
   { label: 'Contact', to: '/contact-us' },
+]
+
+// Branch websites shown in the Contact dropdown.
+export const locations = [
+  { label: 'Kumbakonam', href: 'https://avmsmilesdental.com/kumbakonam/' },
+  { label: 'Thanjavur', href: 'https://avmsmilesdental.com/thanjavur/' },
+  { label: 'Chidambaram', href: 'https://avmsmilesdental.com/chidambaram/' },
+  { label: 'Puducherry', href: 'https://avmsmilesdental.com/puducherry/' },
+  { label: 'Cuddalore', href: 'https://avmsmilesdental.com/cuddalore/' },
 ]
 
 export const social = [
